@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. - Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form action="#" method="GET" class="search-form">
+                <input type="text" name="search" placeholder="Search for movies...">
+                <button type="submit"><i class="fas fa-search"></i>SEARCH</button>
+            </form>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="movies-container">
+        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <section id="romance" class="swiper-slide">
+                    <h2>Romance</h2>
+                    <div class="movie-card">
+                        <img src="images/movie1.jpg" alt="Movie 1">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie2.jpg" alt="Movie 2">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie3.jpg" alt="Movie 3">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie4.jpg" alt="Movie 4">
+                    </div>
+                </section>
+                <section id="action" class="swiper-slide">
+                    <h2>Action</h2>
+                    <div class="movie-card">
+                        <img src="images/movie5.jpg" alt="Movie 5">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie6.jpg" alt="Movie 6">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie7.jpg" alt="Movie 7">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie8.jpg" alt="Movie 8">
+                    </div>
+                </section>
+                <section id="comedy" class="swiper-slide">
+                    <h2>Comedy</h2>
+                    <div class="movie-card">
+                        <img src="images/movie9.jpg" alt="Movie 9">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie10.jpg" alt="Movie 10">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie11.jpg" alt="Movie 11">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/releasemovie 3.jpg" alt="Movie 12">
+                    </div>
+                </section>
+                <section id="horror" class="swiper-slide">
+                    <h2>Horror</h2>
+                    <div class="movie-card">
+                        <img src="images/movie13.jpg" alt="Movie 13">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/releasemovie 1.jpg" alt="Movie 14">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie15.jpg" alt="Movie 15">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie16.jpg" alt="Movie 16">
+                    </div>
+                </section>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </main>
+    <!-- Add Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
