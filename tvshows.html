@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. - TV Shows</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form action="#" method="GET" class="search-form">
+                <input type="text" name="search" placeholder="Search for TV shows...">
+                <button type="submit"><i class="fas fa-search"></i>SEARCH</button>
+            </form>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="tvshows-container">
+        <h1>TV Shows</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <section id="crime-mystery" class="swiper-slide">
+                   
+                    <div class="tvshows-card">
+                        <img src="images/tvshow1.jpg" alt="TV Show 1">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow2.jpg" alt="TV Show 2">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow3.jpg" alt="TV Show 3">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow4.jpg" alt="TV Show 4">
+                    </div>
+                </section>
+                <section id="fantasy" class="swiper-slide">
+               
+                    <div class="tvshows-card">
+                        <img src="images/tvshow5.jpg" alt="TV Show 5">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow6.jpg" alt="TV Show 6">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow7.jpg" alt="TV Show 7">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow8.jpg" alt="TV Show 8">
+                    </div>
+                </section>
+                <section id="comedy" class="swiper-slide">
+                    <div class="tvshows-card">
+                        <img src="images/tvshow9.jpg" alt="TV Show 9">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/friends from college.jpg" alt="TV Show 10">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/last airbender.jpg" alt="TV Show 11">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/money heist.jpg" alt="TV Show 12">
+                    </div>
+                </section>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </main>
+    <!-- Add Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
