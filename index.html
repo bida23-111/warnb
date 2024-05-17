@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form action="#" method="GET" class="search-form">
+                <input type="text" name="search" placeholder="Search ...">
+                <button type="submit"><i class="fas fa-search"></i>SEARCH</button>
+            </form>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home-container">
+        <h1>Welcome to Warner Bros.</h1>
+        <p>Explore our latest movies, TV shows, games, and more!</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <section id="latest-releases" class="swiper-slide">
+                    <h2>Latest Releases</h2>
+                    <div class="movie-card">
+                        <img src="images/releasemovie 1.jpg" alt="Movie 17">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie8.jpg" alt="Movie 8">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie6.jpg" alt="Movie 6">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/movie3.jpg" alt="Movie 3">
+                    </div>
+                </section>
+                <section id="featured-tv-shows" class="swiper-slide">
+                    <h2>Featured TV Shows</h2>
+                                        <div class="tvshows-card">
+                        <img src="images/tvshow5.jpg" alt="TV Show 5">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow6.jpg" alt="TV Show 6">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow7.jpg" alt="TV Show 7">
+                    </div>
+                    <div class="tvshows-card">
+                        <img src="images/tvshow8.jpg" alt="TV Show 8">
+                </section>
+                <section id="popular-games" class="swiper-slide">
+                    <h2>Popular Games</h2>
+                    <div class="game-card">
+                        <img src="images/game1.jpg" alt="Game 1">
+                    </div>
+                    <div class="game-card">
+                        <img src="images/game2.jpg" alt="Game 2">
+                    </div>
+                    <div class="game-card">
+                        <img src="images/game3.jpg" alt="Game 3">
+                    </div>
+                    <div class="game-card">
+                        <img src="images/game4.jpg" alt="Game 4">
+                    </div>
+                </section>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </main>
+    <!-- Add Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
